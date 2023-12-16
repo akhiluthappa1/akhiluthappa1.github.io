@@ -60,40 +60,60 @@
     <section id="services">
       <div class="s-heading">
         <h1>Skills</h1>
-        <p>Here are some of the Services we provide</p>
+        <p>Here are Skills</p>
       </div>
       <div class="s-b-container">
-      <div class="s-box">
-        <div class="s-b-image">
-          <div class="s-type">Software Engineering</div>
-          <img src="./images/s1.png">
-          </div>
-        <div class="s-b-text">
-          <a href="#">Every part of your website is customizable. You have complete freedom to create the perfect website
-            for you or your clients. Easily change colors, fonts and text styles. Apply stunning animations.
-          </a>
-        </div>
-        </div>
         <div class="s-box">
           <div class="s-b-image">
-            <div class="s-type">Back-End</div>
+              <div class="s-type">Software Engineering</div>
+              <img src="./images/s1.png">
+          </div>
+          <div class="s-b-text">
+              <a href="#software-engineering-modal">Learn More!</a>
+          </div>
+      </div>
+      <!-- Make sure the modal is not inside .s-box -->
+      <div id="software-engineering-modal" class="modal">
+          <div class="content">
+              <h1 style="color: green;">Software Engineering</h1>
+              <p>Details about Software Engineering...</p>
+              <a href="#services" class="box-close">×</a>
+          </div>
+      </div>
+        <div class="s-box">
+          <div class="s-b-image">
+            <div class="s-type">Machine Learning</div>
             <img src="./images/s2.png">
             </div>
           <div class="s-b-text">
-            <a href="#">backend development at its finest, including APIs, Database Management, Payment Gateways, etc.
-            </a>
+            <a href="#machine-learning-modal">Learn More!</a>
           </div>
         </div>
+        <!-- Make sure the modal is not inside .s-box -->
+      <div id="machine-learning-modal" class="modal">
+        <div class="content">
+            <h1 style="color: green;">Machine Learning</h1>
+            <p>Details about Machine Learning</p>
+            <a href="#services" class="box-close">×</a>
+        </div>
+    </div>
         <div class="s-box">
           <div class="s-b-image">
-            <div class="s-type">Websites</div>
+            <div class="s-type">Product</div>
             <img src="./images/coder/s3_new.jpeg">
             </div>
           <div class="s-b-text">
-            <a href="#">Create website according to the demand and design.
-            </a>
+            <a href="#Product-Design-Management">Learn More!</a>
           </div>
         </div>
+        <!-- Make sure the modal is not inside .s-box -->
+      <div id="Product-Design-Management" class="modal">
+        <div class="content">
+            <h1 style="color: green;">Product Management & Design</h1>
+            <p>Details about Product</p>
+            <a href="#services" class="box-close">×</a>
+        </div>
+    </div>
       </div>
     </section>
     <section id="portfolio">

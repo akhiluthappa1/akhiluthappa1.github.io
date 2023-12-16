@@ -681,3 +681,57 @@ nav{
         height: 400px;
     }
 }
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Fixed positioning relative to the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    z-index: 1000; /* High z-index to ensure it's on top of other content */
+    /* Set the width and height to match the .s-box or to your preference */
+    width: 1000px; /* Example width */
+    height: 600px; /* Example height */
+    overflow: hidden; /* Prevents the inner content from spilling out */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.modal:target {
+    display: flex; /* Display the modal when targeted */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; /* Take up the full width of the modal */
+    height: 100%; /* Take up the full height of the modal */
+    overflow-y: auto; /* Make content scrollable */
+    position: relative;
+    border-radius: 10px;
+}
+
+.box-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* ... */
+}
+/* Adjust the trigger link style if necessary */
+.s-box a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #15d1ac; /* Example: orange */
+    color: black; /* Text color */
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Additional styling to ensure .modal is above the .s-b-text */
+/* .s-b-text {
+    z-index: 1;
+} */

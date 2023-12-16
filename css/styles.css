@@ -689,7 +689,7 @@ nav{
     transform: translate(-50%, -50%); /* Center the modal */
     z-index: 1000; /* High z-index to ensure it's on top of other content */
     /* Set the width and height to match the .s-box or to your preference */
-    width: 1000px; /* Example width */
+    width: 500px; /* Example width */
     height: 600px; /* Example height */
     overflow: hidden; /* Prevents the inner content from spilling out */
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
@@ -730,7 +730,38 @@ nav{
     text-decoration: none;
     font-weight: bold;
 }
+skills-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Adjust the gap to create even spacing */
+    padding: 20px;
+    overflow-y: auto;
+    max-height: calc(100% - 40px); /* Adjust height */
+    align-items: start; /* Aligns items to the start of the column */
+}
 
+.skills-content > div {
+    /* This ensures that the divs inside the grid are styled uniformly */
+    background: #ffffff; /* Optional: for a distinct background */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for the grid items */
+}
+
+.skills-content h3 {
+    text-align: left; /* Aligns headers to the left */
+    margin-bottom: 10px; /* Gives space below the header */
+}
+
+.skills-content ul {
+    list-style-type: none; /* Removes bullets */
+    padding-left: 0; /* Aligns text to the left */
+}
+
+.skills-content li {
+    text-align: left; /* Aligns list items to the left */
+    line-height: 1.5; /* Adjusts line height for readability */
+    padding-bottom: 5px; /* Gives space below each list item */
+}
 /* Additional styling to ensure .modal is above the .s-b-text */
 /* .s-b-text {
     z-index: 1;

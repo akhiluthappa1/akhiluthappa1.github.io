@@ -314,6 +314,12 @@ nav{
     border-radius: 10px;
     box-shadow: 2px 2px 13px rgba(0,0,0,0.3);
     position:relative;
+    width: 100%;
+    /* max-width: 300px; Adjust as needed */
+    margin: 0 15px;
+    flex: 0 0 31%;
+    height: 250px;
+    /* opacity: 0; */
 }
 .p-b-container{
     width:90%;
@@ -788,7 +794,34 @@ skills-content {
         grid-template-columns: 1fr; /* One column layout on mobile */
     }
 }
-/* Additional styling to ensure .modal is above the .s-b-text */
-/* .s-b-text {
-    z-index: 1;
-} */
+.carousel-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Styles for the carousel itself */
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  /* Styles for navigation buttons */
+  .carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .prev,
+  .next {
+    background-color: #292929;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .clickable-div {
+    cursor: pointer;
+  }
